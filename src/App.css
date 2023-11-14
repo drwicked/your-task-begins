@@ -1,3 +1,8 @@
 h1 {
   color: red;
 }
+body {
+  background: url('./assets/images/tm-bg.jpg');
+  background-size: auto;
+  background-position: 50% 50%;
+}

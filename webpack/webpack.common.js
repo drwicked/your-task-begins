@@ -37,6 +37,10 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
       },
+      {
+        test: /\.(ogg|mp3|wav)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   output: {

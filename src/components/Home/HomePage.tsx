@@ -1,16 +1,24 @@
 import { FC } from 'react';
-import ReactTypescriptTemplateLogo from '../../assets/images/react-typescript-template.png';
+import useSound from 'use-sound';
+import StartTaskSound from '../../assets/start-task.mp3';
+import TMSeal from '../../assets/images/taskmaster-seal.png';
 
 const HomePage: FC = () => {
+  const [play] = useSound(StartTaskSound);
+  const handleClick = () => {
+    console.log('play sound');
+    play();
+  };
   return (
     <div className="text-center">
-      <h1 className="text-4xl font-bold my-2">React Typescript Template</h1>
-      <img
-        src={ReactTypescriptTemplateLogo}
-        width={500}
-        className="mx-auto"
-        alt="React-Typescript-Template"
-      />
+      <button onClick={handleClick}>
+        <img
+          src={TMSeal}
+          width={500}
+          className="mx-auto"
+          alt="React-Typescript-Template"
+        />
+      </button>
     </div>
   );
 };
