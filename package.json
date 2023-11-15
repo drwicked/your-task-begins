@@ -1,9 +1,9 @@
 {
-  "name": "q2",
-  "version": "0.0.1",
+  "name": "your-task-begins",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://drwicked.github.io/your-task-begins",
+  "homepage": "https://yourtaskbegins.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
